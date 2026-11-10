@@ -1,0 +1,2 @@
+TEST BUILD
+GitHub Actions builds assembleDebug. Debug mode uses Google official test ad units and initializes a fresh local wallet to 9999 credits. Test ads are not monetized. Do not tap live production ads for testing. UI and app features are otherwise unchanged.

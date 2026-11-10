@@ -1,0 +1,9 @@
+ALOO SENSI PRO - FINAL BUILD (v8)
+
+Build: open the AlooSensiPro folder in Android Studio, or push to GitHub and run the included workflow.
+
+Before Play Store release:
+- Release builds use the production AdMob IDs (App ID ca-app-pub-2888936097455517~3612208762).
+- Debug builds use Google test ads only.
+- The floating menu shows only while Free Fire (com.dts.freefireth) or Free Fire MAX (com.dts.freefiremax) is in front. Allow "Game detection" once in Settings > Usage access.
+- Subscribe screen: YouTube and TikTok buttons open the channels. Subscriptions are not verified by the app.
