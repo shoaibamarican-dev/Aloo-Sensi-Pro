@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   build:
-    name: Build Aloo Sensi Pro TEST APK
+    name: Build Aloo Sensi Pro PRODUCTION APK
     runs-on: ubuntu-latest
 
     steps:
@@ -73,15 +73,15 @@ jobs:
           echo "Android project found: $PROJECT_DIR"
           echo "PROJECT_DIR=$PROJECT_DIR" >> "$GITHUB_ENV"
 
-      - name: Build Aloo Sensi Pro TEST APK
+      - name: Build Aloo Sensi Pro PRODUCTION APK
         shell: bash
         run: |
           set -euo pipefail
-          gradle --no-daemon --stacktrace --project-dir "$PROJECT_DIR" assembleDebug
+          gradle --no-daemon --stacktrace --project-dir "$PROJECT_DIR" assembleRelease
 
       - name: Upload Aloo Sensi v1 APK
         uses: actions/upload-artifact@v4
         with:
-          name: Aloo-Sensi-Pro-TEST-9999
-          path: ${{ env.PROJECT_DIR }}/app/build/outputs/apk/debug/app-debug.apk
+          name: Aloo-Sensi-Pro-PRODUCTION
+          path: ${{ env.PROJECT_DIR }}/app/build/outputs/apk/release/app-release-unsigned.apk
           if-no-files-found: error

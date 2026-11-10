@@ -1,0 +1,2 @@
+PRODUCTION BUILD
+GitHub Actions builds assembleRelease. Release mode uses the production AdMob ad unit IDs already present in MainActivity.kt and initializes a fresh local wallet to 0 credits. Ensure the IDs are your own approved AdMob production IDs before publishing. Never click your own live ads. The app UI and features are otherwise unchanged.

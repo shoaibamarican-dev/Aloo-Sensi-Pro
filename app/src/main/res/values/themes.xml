@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="aloo_bg">#0A0C14</color>
+    <style name="Theme.Aloo" parent="@android:style/Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowBackground">@color/aloo_bg</item>
+        <item name="android:statusBarColor">@color/aloo_bg</item>
+        <item name="android:navigationBarColor">@color/aloo_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

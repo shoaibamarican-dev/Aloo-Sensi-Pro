@@ -1,0 +1,22 @@
+ALOO SENSI PRO — UPDATED PROJECT NOTES
+
+This is an incremental update to the supplied Android Studio project. Existing package/application ID, Kotlin + WebView architecture, sensitivity profile data, phone database, game choices, drawable assets and Google AdMob test setup are preserved.
+
+Implemented in this update:
+- Replaced Train navigation with Fastest Emote visual calibration (X/Y position, size, spacing, local save).
+- Added Fastest Emote shortcut to the floating overlay.
+- Hide now hides all overlay surfaces; notification Show menu restores them.
+- TikTok and YouTube open externally; TikTok tries installed app packages before browser fallback.
+- Native rewarded-ad completion awards +5 once; incomplete/failed ads award zero.
+- Removed unrestricted JS addCredits bridge.
+- Added local transaction history and insufficient-balance popup for game launches.
+- Kept official Google test App ID/rewarded/banner IDs.
+
+NOT PRODUCTION READY:
+1. No google-services.json or Firebase project configuration was supplied. Google Sign-In is not implemented.
+2. Wallet/transactions remain SharedPreferences local demo data; secure cloud wallet, account sync, SSV and premium entitlement validation need a trusted backend.
+3. Premium prices are informational only; premium unlocks are not wired.
+4. Production AdMob IDs are not supplied; only official test IDs are present.
+5. Build/device test not run: Gradle executable and wrapper scripts are absent in this environment. HTML JavaScript syntax and AndroidManifest XML were checked. Kotlin compilation and runtime behavior remain unverified.
+
+Read README.md for exact Firebase and build setup requirements.
